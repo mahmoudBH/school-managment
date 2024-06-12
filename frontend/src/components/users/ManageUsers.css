@@ -1,0 +1,123 @@
+/* ManageUsers.css */
+.manage-users-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  table-layout: fixed;
+  border: 2px solid transparent; /* Ajout d'une bordure transparente */
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, #e81cff, #40c9ff) border-box; /* Dégradé de couleur pour la bordure */
+  color: #fff;
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid transparent; /* Bordure transparente */
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, #e81cff, #40c9ff) border-box; /* Dégradé pour la bordure */
+  color: #fff;
+  width: 40%; /* Largeur fixe pour chaque colonne */
+  word-wrap: break-word; /* Permettre le passage à la ligne automatique si le texte est trop long */
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+.photo-utilisateur {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-bottom: -7px;
+  object-fit: cover;
+  border: 2px solid #e81cff; /* Ajouter une bordure colorée */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ajouter une ombre portée */
+  transition: transform 0.3s, box-shadow 0.3s; /* Ajouter des transitions */
+}
+
+.photo-utilisateur:hover {
+  transform: scale(1.1); /* Agrandir légèrement la photo au survol */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Augmenter l'ombre portée au survol */
+}
+
+/* Ajustement de la largeur des champs de saisie */
+.users-table input {
+  width: 80%;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.users-table input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+
+.Btn-save {
+  height: 40px;
+  margin: auto;
+  font-family: inherit;
+  font-size: 20px;
+  background-color: rgb(168, 38, 255);
+  color: white;
+  fill: rgb(155, 153, 153);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  font-weight: 1000;
+}
+
+.Btn-save span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.Btn-save svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Btn-save:hover {
+  background-color: rgb(168, 38, 255);
+}
+
+.Btn-save:hover .svg-wrapper {
+  transform: scale(1.25);
+  transition: 0.5s linear;
+}
+
+.Btn-save:hover svg {
+  transform: translateX(1.2em) scale(1.1);
+  fill: #fff;
+}
+
+.Btn-save:hover span {
+  opacity: 0;
+  transition: 0.5s linear;
+}
+
+.Btn-save:active {
+  transform: scale(0.95);
+}

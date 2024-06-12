@@ -1,0 +1,121 @@
+.form-containerr {
+    width: 458px;
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 5px 24px;
+    font-size: 12px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 16px auto 81px;
+    height: 650px;
+  }
+  
+  .form-containerr button:active {
+    scale: 0.95;
+  }
+
+  
+  .form-containerr .form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    bottom: 50px;
+  }
+  
+  .form-containerr .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form-containerr .form-group select option {
+    /* Ajoutez vos styles personnalisés pour les options ici */
+    color: #fff; /* Couleur du texte */
+    background-color: #313131; /* Couleur de fond */
+    /* Autres styles personnalisés */
+  }
+  .form-containerr .form-group .form-controll {
+    width: 98%;
+  }
+  
+  .form-containerr .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  
+  
+  .form-containerr .form-group input,
+  .form-containerr .form-group select,
+  .form-containerr .form-group textarea {
+    width: 90%;
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-containerr .form-group input::placeholder,
+  .form-containerr .form-group textarea::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-containerr .form-group input:focus,
+  .form-containerr .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+
+  .form-containerr .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-containerr .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+  
+  .h1 {
+    color: #e81cff;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .error-message {
+    font-size: 17px;
+    margin-top: -33px;
+    text-align: center;
+  }
+  .success-message {
+    font-size: 17px;
+    margin-top: -33px;
+    text-align: center;
+  }
+  

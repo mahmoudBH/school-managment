@@ -1,0 +1,129 @@
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px; /* Marges intérieures pour aérer le contenu */
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between; /* Alignement des éléments à gauche et à droite */
+  align-items: center; /* Alignement vertical des éléments */
+}
+
+.logo {
+  width: 100px; /* Taille de l'image du logo */
+  height: auto;
+}
+
+nav ul {
+  list-style: none; /* Supprimer les puces des listes */
+  padding: 0;
+  margin: 0;
+  margin-right: 150px;
+  font-size: 25px;
+}
+
+nav ul li {
+  display: inline-block; /* Afficher les éléments de la liste en ligne */
+  margin-right: 50px; /* Espacement entre les éléments de la liste */
+}
+
+nav ul li a {
+  text-decoration: none; /* Supprimer le soulignement des liens */
+  color: #fff; /* Couleur du texte des liens */
+  font-weight: bold; /* Police en gras */
+}
+
+nav ul li a:hover {
+  color: #e81cff; /* Couleur du texte des liens au survol */
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: -30px;
+  object-fit: cover;
+  border: 2px solid #e81cff; /* Ajouter une bordure colorée */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ajouter une ombre portée */
+  transition: transform 0.3s, box-shadow 0.3s; /* Ajouter des transitions */
+}
+
+.profile-photo:hover {
+  transform: scale(1.1); /* Agrandir légèrement la photo au survol */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Augmenter l'ombre portée au survol */
+}
+
+.Btn {
+  --black: #000000;
+  --ch-black: #141414;
+  --eer-black: #1b1b1b;
+  --night-rider: #2e2e2e;
+  --white: #ffffff;
+  --af-white: #f3f3f3;
+  --ch-white: #e1e1e1;
+  
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: var(--night-rider);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: var(--af-white);
+}
+/* text */
+.text {
+  position: absolute;
+  top: 31%;
+  right: -4%;
+  width: 0%;
+  opacity: 0;
+  color: var(--af-white);
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  border-radius: 5px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 10px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}

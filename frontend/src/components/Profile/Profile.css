@@ -1,0 +1,200 @@
+.profile-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-details {
+  width: 480px;
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, #e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 5px 24px;
+  font-size: 12px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  margin: 16px auto 81px;
+  height: auto; /* Ajuster la hauteur automatiquement */
+}
+
+.profile-details h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.profile-details p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.photo-profile {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: -55px auto -5px; /* Centrer la photo et ajouter une marge en bas */
+  object-fit: cover;
+  border: 3px solid #e81cff; /* Ajouter une bordure pour un meilleur style */
+}
+
+.photo-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px; /* Centrer la placeholder et ajouter une marge en bas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #414141;
+  color: #fff;
+  font-weight: bold;
+  border: 3px solid #e81cff; /* Ajouter une bordure pour un meilleur style */
+}
+
+.Btn-edit-profile {
+  margin: 0px auto 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 36px;
+  border: none;
+  padding: 0px 20px;
+  background-color: rgb(168, 38, 255);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px rgb(140, 32, 212);
+  transition-duration: .3s;
+}
+
+.svg-edit {
+  width: 13px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  fill: white;
+  transition-duration: .3s;
+}
+
+.Btn-edit-profile:hover {
+  color: transparent;
+}
+
+.Btn-edit-profile:hover svg {
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: .3s;
+}
+
+.Btn-edit-profile:active {
+  transform: translate(3px , 3px);
+  transition-duration: .3s;
+  box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
+
+
+/* Classes pour le formulaire */
+.form-group, .form-controll {
+  width: 98%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.form-group input {
+  width: 90%;
+  padding: 6px 17px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  opacity: 0.5;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.noselect {
+  margin: auto;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  background: #e62222;
+}
+
+.noselect, span {
+  transition: 200ms;
+}
+
+.text-cancel {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.icon-cancel {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(110px);
+  height: 40px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-cancel {
+  width: 15px;
+  fill: #eee;
+}
+
+.noselect:hover {
+  background: #ff3636;
+}
+
+.noselect:hover .text-cancel {
+  color: transparent;
+}
+
+.noselect:hover .icon-cancel {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.noselect:focus {
+  outline: none;
+}
+
+.noselect:active .icon-cancel .svg-cancel {
+  transform: scale(0.8);
+}
